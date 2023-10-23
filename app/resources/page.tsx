@@ -13,7 +13,7 @@ const resources = () => {
         <div className='gap-8 flex justify-evenly flex-wrap mx-20 my-10'>
           
             {data.map(card =>(
-              <div className=" text-[#595959] w-80">
+              <div key="" className=" text-[#595959] w-80">
                 <iframe src={card.video} className='rounded my-2 w-full'/>
                 <h2 className="text-2xl my-2 text-center">{card.title}</h2>
                 <p className='my-2 text-justify'>{card.description}</p>
