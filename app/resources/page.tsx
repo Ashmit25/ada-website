@@ -34,14 +34,14 @@ const Resources = () => {
               <source src={card.video} type="video/mp4" />
             </video>
             <div className="bg-white p-5 rounded-r-lg flex justify-center flex-col gap-4 text-center w-96">
-              <h2 className="text-2xl">{card.title}</h2>
+              <h2 className="text-2xl font-bold">{card.title}</h2>
               <p>{card.description}</p>
               <a
                 href={card.link}
                 className="bg-[#2977f5] text-white p-2 rounded-lg"
                 target="_blank"
               >
-                Link to Slides
+                Presentation
               </a>
             </div>
           </div>
