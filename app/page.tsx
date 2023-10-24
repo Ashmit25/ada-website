@@ -4,12 +4,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="flex justify-between mx-20 gap-32 w-7/10 items-center">
-        <div className="py-10">
+      <div className="flex flex-col-reverse sm:flex-row justify-between mx-20 sm:gap-32 w-7/10 items-center">
+        <div className="sm:text-left text-center">
           <h1 className="text-5xl font-bold text-[#2977f5] mb-5">
             Project ADA
           </h1>
-          <p className="text-[#595959] text-justify">
+          <p className="text-[#595959]">
             Join us for an extraordinary event that celebrates and empowers
             girls in the world of technology. Exun Clan proudly presents{" "}
             <span className="font-bold">Project ADA: Girls in Tech 2023</span>{" "}
