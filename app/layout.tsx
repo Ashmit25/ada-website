@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const chivo = Chivo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Project ADA",
-  description: "Project ADA: Girls in Tech 2023",
+  title: "Project Ada",
+  description: "Project Ada: Girls in Tech 2023",
 };
 
 export default function RootLayout({
