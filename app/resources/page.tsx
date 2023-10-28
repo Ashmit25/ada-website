@@ -26,14 +26,22 @@ const Resources = () => {
       <div className="gap-8 flex justify-evenly flex-wrap mx-20 my-10">
         {filteredData.map((card, i) => (
           <div key={i} className="text-[#595959] drop-shadow-2xl sm:flex">
-            <video
-              className="rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none w-96"
-              controls
-              poster="/thumbnail.png"
+            {card.video && (
+              <video
+                className="rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none w-96"
+                controls
+                poster="/thumbnail.png"
+              >
+                <source src={card.video} type="video/mp4" />
+              </video>
+            )}
+            <div
+              className={
+                card.video
+                  ? "bg-white p-5 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none flex justify-center flex-col gap-4 text-center w-96"
+                  : "bg-white p-5 rounded-lg flex justify-center flex-col gap-4 text-center w-96"
+              }
             >
-              <source src={card.video} type="video/mp4" />
-            </video>
-            <div className="bg-white p-5 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none flex justify-center flex-col gap-4 text-center w-96">
               <h2 className="text-2xl font-bold">{card.title}</h2>
               <p>{card.description}</p>
               <a

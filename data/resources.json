@@ -4,5 +4,16 @@
     "title": "Prerequisite 1",
     "description": "Installing and getting started with the very basics of Python",
     "link": "https://docs.google.com/presentation/d/17yIkUWpU8mgmJDwEaIsMW6k_iKrwjJtKyvmCoxCT1ko/edit?usp=sharing"
+  },
+  {
+    "title": "Workshop 1",
+    "description": "Installing and getting started with the very basics of Python",
+    "link": "https://docs.google.com/presentation/d/1KzYmvvTu1-Qfbuvw9YamrAmRzYoTgHZnd0ZT1RWoqDY/edit#slide=id.p"
+  },
+  {
+    "video": "/videos/p2.mp4",
+    "title": "Prerequisite 2",
+    "description": "Getting started with other fundamental Programming and Python topics",
+    "link": "https://docs.google.com/presentation/d/1gmtZrA6m1bt0PWM2wqTjUt0yClRXR8n-ww3yiA4J5Q4/edit?usp=sharing"
   }
 ]
