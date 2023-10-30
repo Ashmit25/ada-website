@@ -61,7 +61,7 @@ export default function Navbar() {
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
-          {!showMobile && (
+          {showMobile && (
             <div className="z-[3] bg-[#2977f5bf] text-white fixed top-0 left-0 right-0 h-screen flex flex-col items-center justify-center gap-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
