@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col-reverse sm:flex-row justify-between mx-20 sm:gap-32 w-7/10 items-center">
+      <div className="flex flex-col-reverse sm:flex-row justify-between mb-10 mx-20 sm:gap-32 w-7/10 items-center">
         <div className="sm:text-left text-center">
           <h1 className="text-5xl font-bold text-[#2977f5] mb-5">
             Project ADA

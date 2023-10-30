@@ -11,7 +11,7 @@ const Resources = () => {
 
   return (
     <>
-      <h1 className="text-4xl text-[#2977f5] mb-5 mt-10 mx-20 text-center font-bold">
+      <h1 className="text-4xl text-[#2977f5] mb-5 mt-10 sm:mx-20 text-center font-bold">
         Resources
       </h1>
       <div className="flex justify-center">
@@ -19,7 +19,7 @@ const Resources = () => {
           type="text"
           onChange={(e) => setSearch(e.target.value)}
           value={search}
-          className="rounded-lg bg-[#e0ecff] p-2 outline-none w-96"
+          className="rounded-lg bg-[#e0ecff] p-2 outline-none min-w-[208px] sm:w-96"
           placeholder="Search"
         />
       </div>
@@ -28,7 +28,7 @@ const Resources = () => {
           <div key={i} className="text-[#595959] drop-shadow-2xl sm:flex">
             {card.video && (
               <video
-                className="rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none w-96"
+                className="rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none min-w-[208px] sm:w-96"
                 controls
                 poster="/thumbnail.png"
               >
@@ -38,8 +38,8 @@ const Resources = () => {
             <div
               className={
                 card.video
-                  ? "bg-white p-5 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none flex justify-center flex-col gap-4 text-center w-96"
-                  : "bg-white p-5 rounded-lg flex justify-center flex-col gap-4 text-center w-96"
+                  ? "bg-white p-5 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none flex justify-center flex-col gap-4 text-center min-w-[208px] sm:w-96"
+                  : "bg-white p-5 rounded-lg flex justify-center flex-col gap-4 text-center min-w-[208px] sm:w-96"
               }
             >
               <h2 className="text-2xl font-bold">{card.title}</h2>
