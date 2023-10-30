@@ -23,7 +23,7 @@ const Resources = () => {
           placeholder="Search"
         />
       </div>
-      <div className="gap-8 flex justify-evenly flex-wrap mx-20 my-10">
+      <div className="gap-4 flex justify-evenly flex-wrap mx-20 my-10">
         {filteredData.map((card, i) => (
           <div
             key={i}
