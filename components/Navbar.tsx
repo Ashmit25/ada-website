@@ -1,7 +1,11 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Chivo } from "next/font/google";
+
+const chivo = Chivo({ subsets: ["latin"] });
 
 const links = [
   {
@@ -20,6 +24,8 @@ const links = [
 
 export default function Navbar() {
   const [showMobile, setShowMobile] = useState(false);
+  const pathName = usePathname();
+
   return (
     <>
       <div className="flex flex-row justify-between p-8 items-center mx-3">
@@ -35,10 +41,16 @@ export default function Navbar() {
 
         <div className="hidden sm:flex flex-row items-center justify-center gap-8">
           {links.map(({ label, href }) => (
-            <Link key={label} href={href} className="active:text-[#2977f5]">
-              <p className=" text-lg cursor-pointer text-[#595959] hover:text-[#2977f5] ">
-                {label}
-              </p>
+            <Link
+              key={label}
+              href={href}
+              className={
+                pathName == href
+                  ? `text-[#2977f5] ${chivo.className} text-lg cursor-pointer hover:text-[#2977f5] `
+                  : "text-lg cursor-pointer text-[#595959] hover:text-[#2977f5] "
+              }
+            >
+              {label}
             </Link>
           ))}
         </div>
