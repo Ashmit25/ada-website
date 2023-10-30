@@ -2,23 +2,29 @@
   {
     "video": "/videos/p1.mp4",
     "title": "Prerequisite 1",
-    "description": "Installing and getting started with the very basics of Python",
+    "description": "Installing and getting started with the very basics of Python.",
     "link": "https://docs.google.com/presentation/d/17yIkUWpU8mgmJDwEaIsMW6k_iKrwjJtKyvmCoxCT1ko/edit?usp=sharing"
   },
   {
     "title": "Workshop 1",
-    "description": "Installing and getting started with the very basics of Python",
+    "description": "Installing and getting started with the very basics of Python.",
     "link": "https://docs.google.com/presentation/d/1KzYmvvTu1-Qfbuvw9YamrAmRzYoTgHZnd0ZT1RWoqDY/edit#slide=id.p"
   },
   {
     "video": "/videos/p2.mp4",
     "title": "Prerequisite 2",
-    "description": "Getting started with other fundamental Programming and Python topics",
+    "description": "Getting started with other fundamental Programming and Python concepts.",
     "link": "https://docs.google.com/presentation/d/1gmtZrA6m1bt0PWM2wqTjUt0yClRXR8n-ww3yiA4J5Q4/edit?usp=sharing"
   },
   {
-    "title": "Workshop 1",
-    "description": "Getting started with other fundamental Programming and Python topics",
+    "title": "Workshop 2",
+    "description": "Getting started with other fundamental Programming and Python concepts.",
     "link": "https://docs.google.com/presentation/d/1upxBPAh8g2OCv0u7v7cFYB75akoqA_lLAfQxuxk7Ba8/edit?usp=sharing"
+  },
+  {
+    "video": "/videos/p3.mp4",
+    "title": "Prerequisite 3",
+    "description": "Getting started with the fundamental programming concept Time Complexity.",
+    "link": "https://docs.google.com/presentation/d/1gmtZrA6m1bt0PWM2wqTjUt0yClRXR8n-ww3yiA4J5Q4/edit?usp=sharing"
   }
 ]
