@@ -3,9 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Chivo } from "next/font/google";
-
-const chivo = Chivo({ subsets: ["latin"] });
 
 const links = [
   {
@@ -46,7 +43,7 @@ export default function Navbar() {
               href={href}
               className={
                 pathName == href
-                  ? `text-[#2977f5] ${chivo.className} text-lg cursor-pointer hover:text-[#2977f5] `
+                  ? `text-[#2977f5] text-lg cursor-pointer hover:text-[#2977f5] `
                   : "text-lg cursor-pointer text-[#595959] hover:text-[#2977f5] "
               }
             >
